@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpShapes = new System.Windows.Forms.GroupBox();
             this.rdoRectangle = new System.Windows.Forms.RadioButton();
             this.rdoSquare = new System.Windows.Forms.RadioButton();
             this.rdoTriangle = new System.Windows.Forms.RadioButton();
             this.rdoCircle = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.grpCompute = new System.Windows.Forms.GroupBox();
+            this.chkPerimeter = new System.Windows.Forms.CheckBox();
+            this.chkArea = new System.Windows.Forms.CheckBox();
             this.lblArea = new System.Windows.Forms.Label();
             this.lblPerimeter = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -66,8 +66,8 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblColor = new System.Windows.Forms.Label();
             this.lblNoSide = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.grpShapes.SuspendLayout();
+            this.grpCompute.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -78,18 +78,18 @@
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // grpShapes
             // 
-            this.groupBox1.Controls.Add(this.rdoRectangle);
-            this.groupBox1.Controls.Add(this.rdoSquare);
-            this.groupBox1.Controls.Add(this.rdoTriangle);
-            this.groupBox1.Controls.Add(this.rdoCircle);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Shape";
+            this.grpShapes.Controls.Add(this.rdoRectangle);
+            this.grpShapes.Controls.Add(this.rdoSquare);
+            this.grpShapes.Controls.Add(this.rdoTriangle);
+            this.grpShapes.Controls.Add(this.rdoCircle);
+            this.grpShapes.Location = new System.Drawing.Point(12, 12);
+            this.grpShapes.Name = "grpShapes";
+            this.grpShapes.Size = new System.Drawing.Size(200, 100);
+            this.grpShapes.TabIndex = 0;
+            this.grpShapes.TabStop = false;
+            this.grpShapes.Text = "Shape";
             // 
             // rdoRectangle
             // 
@@ -135,36 +135,36 @@
             this.rdoCircle.Text = "Circle";
             this.rdoCircle.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // grpCompute
             // 
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 118);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 100);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Compute";
+            this.grpCompute.Controls.Add(this.chkPerimeter);
+            this.grpCompute.Controls.Add(this.chkArea);
+            this.grpCompute.Location = new System.Drawing.Point(12, 118);
+            this.grpCompute.Name = "grpCompute";
+            this.grpCompute.Size = new System.Drawing.Size(200, 100);
+            this.grpCompute.TabIndex = 1;
+            this.grpCompute.TabStop = false;
+            this.grpCompute.Text = "Compute";
             // 
-            // checkBox2
+            // chkPerimeter
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(47, 63);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(70, 17);
-            this.checkBox2.TabIndex = 9;
-            this.checkBox2.Text = "Perimeter";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkPerimeter.AutoSize = true;
+            this.chkPerimeter.Location = new System.Drawing.Point(47, 63);
+            this.chkPerimeter.Name = "chkPerimeter";
+            this.chkPerimeter.Size = new System.Drawing.Size(70, 17);
+            this.chkPerimeter.TabIndex = 9;
+            this.chkPerimeter.Text = "Perimeter";
+            this.chkPerimeter.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chkArea
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(47, 31);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(48, 17);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "Area";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkArea.AutoSize = true;
+            this.chkArea.Location = new System.Drawing.Point(47, 31);
+            this.chkArea.Name = "chkArea";
+            this.chkArea.Size = new System.Drawing.Size(48, 17);
+            this.chkArea.TabIndex = 8;
+            this.chkArea.Text = "Area";
+            this.chkArea.UseVisualStyleBackColor = true;
             // 
             // lblArea
             // 
@@ -457,14 +457,14 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblPerimeter);
             this.Controls.Add(this.lblArea);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpCompute);
+            this.Controls.Add(this.grpShapes);
             this.Name = "Form1";
             this.Text = "BasicShapes";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grpShapes.ResumeLayout(false);
+            this.grpShapes.PerformLayout();
+            this.grpCompute.ResumeLayout(false);
+            this.grpCompute.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -484,8 +484,8 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox grpShapes;
+        private System.Windows.Forms.GroupBox grpCompute;
         private System.Windows.Forms.Label lblArea;
         private System.Windows.Forms.Label lblPerimeter;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -516,8 +516,8 @@
         private System.Windows.Forms.RadioButton rdoSquare;
         private System.Windows.Forms.RadioButton rdoTriangle;
         private System.Windows.Forms.RadioButton rdoCircle;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkPerimeter;
+        private System.Windows.Forms.CheckBox chkArea;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblColor;
         private System.Windows.Forms.Label lblNoSide;

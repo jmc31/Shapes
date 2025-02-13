@@ -39,5 +39,10 @@ namespace shapes
         
         }
 
+        public virtual double computePerimeter()
+        {
+            return 0.0;
+        }
+
     }
 }

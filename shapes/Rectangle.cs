@@ -39,8 +39,8 @@ namespace shapes
         {
             return this.Length*this.Width;
         }
-        //public override double computePerimeter() {
-        //    return 2 * (this.Length + this.Width);
-        //}
+        public override double computePerimeter() {
+            return 2 * (this.Length + this.Width);
+        }
     }
 }
